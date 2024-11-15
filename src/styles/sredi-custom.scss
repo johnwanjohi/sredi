@@ -1,0 +1,221 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the theme object.
+// $sredi-theme: mat.define-theme(
+//   (
+//     color: (
+//       theme-type: light,
+//       primary: mat.$azure-palette,
+//       tertiary: mat.$blue-palette,
+//     ),
+//     density: (
+//       scale: 0,
+//     ),
+//   )
+// );
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+:root {
+  // @include mat.all-component-themes($sredi-theme);
+}
+
+// Comment out the line below if you want to use the pre-defined typography utility classes.
+// For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
+// @include mat.typography-hierarchy($sredi-theme);
+
+// Comment out the line below if you want to use the deprecated `color` inputs.
+// @include mat.color-variants-backwards-compatibility($sredi-theme);
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+// @use "@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+// @include mat.core();
+
+// Define the theme object.
+$sredi-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
+
+:root {
+  @include mat.all-component-themes($sredi-theme);
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #F7F9FB;
+;
+}
+
+.sidenav-container {
+  display: flex;
+  height: 100vh;
+  padding-left: 5px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+.dense-1 {
+  @include mat.all-component-densities(-1);
+}
+
+.dense-2 {
+  @include mat.all-component-densities(-2);
+}
+
+.logo {
+  padding: 16px;
+  text-align: start;
+  img {
+    max-width: 117px;
+    max-height: 61px;
+    gap: 0px;
+    opacity: 0px;
+  }
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
+mat-nav-list {
+  // padding-top: 20px;
+}
+
+mat-list-item {
+  color: white;
+}
+
+mat-list-item:hover {
+  background-color: #d9edff;
+}
+
+
+.content {
+  padding: 20px;
+  //border-color: red;
+  //border-width: 3px;
+}
+.rotate-neg-5 {
+  transform: rotate(-5deg);
+}
+.rotate-5 {
+  transform: rotate(15deg);
+}
+.rotate-15 {
+  transform: rotate(15deg);
+}
+.rotate-30 {
+  transform: rotate(30deg);
+}
+.rotate-45 {
+  transform: rotate(45deg);
+}
+.rotate-60 {
+  transform: rotate(60deg);
+}
+.rotate-75 {
+  transform: rotate(75deg);
+}
+.rotate-90 {
+  transform: rotate(90deg);
+}
+.rotate-105 {
+  transform: rotate(105deg);
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.rotate-195 {
+  transform: rotate(195deg);
+}
+.rotate-200 {
+  transform: rotate(200deg);
+}
+.rotate-240 {
+  transform: rotate(240deg);
+}
+.rotate-280 {
+  transform: rotate(280deg);
+}
+.rotate-300 {
+  transform: rotate(300deg);
+}
+.rotate-330 {
+  transform: rotate(330deg);
+}
+.rotate-360 {
+  transform: rotate(360deg);
+}
+
+html,
+body,
+.mat-sidenav-container {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent page scrolling */
+}
+
+.sidenav-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+}
+
+.mat-sidenav-content,
+.mat-sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1; /* Take up remaining space */
+  overflow: auto; /* Enable internal scrolling if content overflows */
+}
+
+.spacer {
+  flex: 1;
+}
+
+.search-container,
+.date-range-container {
+  display: flex;
+}
+.mat-card-title-dashboard{
+  //styleName: Header/Heading Semibold/Heading 7 -  Semibold;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}

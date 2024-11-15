@@ -1,0 +1,196 @@
+<mat-sidenav-container class="sidenav-container" autosize autoFocus>
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <div class="logo">
+      <img src="../assets/img/logo.png" alt="Logo" class="logo-img" />
+    </div>
+    <div class="accounts_panel">
+      <img
+        src="../assets/img/accounts_image.png"
+        alt="Logo"
+        class="account-img"
+      />
+      <mat-icon class="material-icons">arrow-forward</mat-icon>
+    </div>
+    <mat-toolbar><div class="general_title">GENERAL</div></mat-toolbar>
+    <mat-nav-list>
+      <!-- Navigation items -->
+      <a
+        routerLinkActive="active-route"
+        [routerLink]="'/dashboard'"
+        mat-list-item
+        href="#"
+      >
+        <mat-icon matListItemIcon>home-outline</mat-icon>
+        <span>Overview</span>
+      </a>
+      <a mat-list-item href="#" style="display: flex">
+        <mat-icon matListItemIcon aria-label="Store icon"
+          >storefront-outline</mat-icon
+        >
+        <span class="navigation-text">Navigation 2</span> &nbsp;&nbsp;
+        <mat-icon
+          class="secondary-icon"
+          style="margin-left: 100px; align-items: center"
+          >expand_more</mat-icon
+        >
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon matListItemIcon aria-label="Side nav toggle icon"
+          >description-outline</mat-icon
+        >
+        <span>Navigation 03</span></a
+      >
+      <a mat-list-item href="#">
+        <mat-icon matListItemIcon aria-label="Side nav toggle icon"
+          >group-outline</mat-icon
+        >
+        <span>Navigation 04</span></a
+      >
+      <a mat-list-item href="#">
+        <mat-icon matListItemIcon aria-label="Side nav toggle icon"
+          >show_chart-outline</mat-icon
+        >
+        <span>Navigation 06</span></a
+      >
+    </mat-nav-list>
+    <mat-toolbar><div class="general_title">TOOLS</div></mat-toolbar>
+    <mat-nav-list>
+      <!-- Navigation items -->
+      <a mat-list-item href="#">
+        <mat-icon matListItemIcon>settings_outline</mat-icon>
+        <span>Account & Settings</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon matListItemIcon>help_outline</mat-icon>
+
+        <span class="navigation-text">Help</span>
+      </a>
+
+      <a mat-list-item style="display: flex" class="menu-toggle-dark-mode">
+        <mat-icon matListItemIcon class="rotate-330" style="flex-grow: 0"
+          >nightlight_outline</mat-icon
+        >
+        <span style="flex-grow: 1; width: 100%">Dark Mode</span>
+        <mat-slide-toggle
+          style="margin-left: 100px"
+          [(ngModel)]="isDarkMode"
+          aria-label="Toggle Dark Mode"
+        ></mat-slide-toggle>
+      </a>
+    </mat-nav-list>
+    <mat-toolbar style="padding-top: 10px">
+      <div class="assistance_query_card">
+        <div class="content_holder">
+          <label class="query_header"> Need Assistance ? </label>
+          <label class="query-info">
+            For Report, Support or Suggestions, Please reach out to
+            <a href="mailto:success@sred.io">success&#64;sred.io</a>
+          </label>
+        </div>
+      </div>
+    </mat-toolbar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <br />
+    <mat-toolbar>
+      <mat-toolbar-row class="top-most-icons">
+        <!-- Menu button for mobile devices -->
+        <button
+          *ngIf="isHandset$ | async"
+          mat-icon-button
+          (click)="drawer.toggle()"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+
+        <!-- Exit button with rotation class -->
+        <button mat-icon-button class="rotate-180">
+          <mat-icon matBadgeColor="accent" matBadgeOverlap="false"
+            >exit_to_app</mat-icon
+          >
+        </button>
+
+        <!-- Search container with input and icon -->
+        <div class="search-container">
+          <input matInput placeholder="Search" />
+          <mat-icon>search</mat-icon>
+        </div>
+
+        <!-- Spacer to align elements to the right -->
+        <span class="spacer"></span>
+
+        <!-- Mail and Notifications icons with badges -->
+        <button mat-icon-button>
+          <mat-icon matBadge="2" matBadgeColor="accent" matBadgeOverlap="false"
+            >mail</mat-icon
+          >
+        </button>
+        <button mat-icon-button>
+          <mat-icon matBadge="6" matBadgeColor="accent" matBadgeOverlap="false"
+            >notifications_none</mat-icon
+          >
+        </button>
+
+        <!-- Vertical divider for visual separation -->
+        <mat-divider class="vertical-divider"></mat-divider>
+
+        <!-- Date range picker for fiscal period selection -->
+        <div class="calendar-range-date">
+          <mat-form-field appearance="outline">
+            <mat-label>Fiscal Period</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+              <input
+                matStartDate
+                placeholder="01-01-2023"
+                [(ngModel)]="startDate"
+              />
+              <input
+                matEndDate
+                placeholder="31-12-2023"
+                [(ngModel)]="endDate"
+              />
+            </mat-date-range-input>
+            <mat-datepicker-toggle [for]="picker" matSuffix>
+              <mat-icon>calendar_today</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+          </mat-form-field>
+        </div>
+      </mat-toolbar-row>
+      <mat-toolbar-row>
+        <div class="intro" style="margin-right: auto">
+          <h2 class="intro-header">Welcome Back, John Doe!</h2>
+          <label class="selected-date-chip"
+            >{{ startDate | date : "MMM d, y" }} -
+            {{ endDate | date : "MMM d, y" }}</label
+          >
+        </div>
+        <div style="margin-left: auto">
+          <button mat-button class="refresh-button">
+            <mat-icon>refresh</mat-icon>
+          </button>
+        </div>
+      </mat-toolbar-row>
+      <mat-toolbar-row>
+        <div class="active_integrations_container">
+          <label class="active_integrations">Active Integrations: </label>
+          <div class="integration-pills-container">
+            <label class="integration">Jira</label>
+            <label class="integration">Click Up</label>
+            <label class="integration">Azure</label>
+          </div>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
