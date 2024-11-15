@@ -1,7 +1,8 @@
-import {ChangeDetectorRef, Component, Inject, OnInit, PLATFORM_ID,} from '@angular/core';
+import {ChangeDetectorRef, Component, Inject, OnInit, OnDestroy, PLATFORM_ID,} from '@angular/core';
 import {AgChartOptions} from 'ag-charts-community';
 import { isPlatformBrowser } from '@angular/common';
 import {DataService} from '../../shared/data.service';
+import { SubscriptionsContainer } from '../../shared/subscriptions-container';
 
 
 @Component({
@@ -9,10 +10,13 @@ import {DataService} from '../../shared/data.service';
   templateUrl: './overall-hours.component.html',
   styleUrl: './overall-hours.component.scss'
 })
-export class OverallHoursComponent implements OnInit {
+export class OverallHoursComponent implements OnInit, OnDestroy {
   public chartOptionsDonut: AgChartOptions;
   public chartOptionsBar: AgChartOptions;
   public isBrowser: boolean;
+  startDate: Date | null = null;
+  endDate: Date | null = null;
+  subScriptions = new SubscriptionsContainer();
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object, private dataServise: DataService, private cdRef: ChangeDetectorRef ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
@@ -20,12 +24,22 @@ export class OverallHoursComponent implements OnInit {
     this.chartOptionsBar = {};
   }
   ngOnInit(){
+    this.subScriptions.add = this.dataServise.startDate$.subscribe((date) => {
+      this.startDate = date;
+      console.log('Start Date:', this.startDate);
+    });
+
+    // Subscribe to the end date observable
+    this.subScriptions.add = this.dataServise.endDate$.subscribe((date) => {
+      this.endDate = date;
+      console.log('End Date:', this.endDate);
+    });
     this.loadChartData();
   }
 
-  async loadChartData() {
+  loadChartData() {
     let hoursWorked=0,trackedHours = 0;
-    await this.dataServise.getData('hours.json').subscribe((data) => {
+    this.subScriptions.add = this.dataServise.getData('hours.json').subscribe((data) => {
       let donutData  = Array.from ([
         { hours: "Hours Worked", value: data.reduce((a, b) => {
           return a + b.hoursWorked;
@@ -104,6 +118,9 @@ export class OverallHoursComponent implements OnInit {
       this.cdRef.detectChanges();
     });
 
+  }
+  ngOnDestroy(){
+    this.subScriptions.dispose();
   }
 
 

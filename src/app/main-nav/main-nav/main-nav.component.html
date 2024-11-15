@@ -145,16 +145,18 @@
         <div class="calendar-range-date">
           <mat-form-field appearance="outline">
             <mat-label>Fiscal Period</mat-label>
-            <mat-date-range-input [rangePicker]="picker">
+            <mat-date-range-input [rangePicker]="picker" #dateRangePicker>
               <input
                 matStartDate
                 placeholder="01-01-2023"
                 [(ngModel)]="startDate"
+                (dateChange)="onStartDateChange($event)"
               />
               <input
                 matEndDate
                 placeholder="31-12-2023"
                 [(ngModel)]="endDate"
+                (dateChange)="onEndDateChange($event)"
               />
             </mat-date-range-input>
             <mat-datepicker-toggle [for]="picker" matSuffix>
