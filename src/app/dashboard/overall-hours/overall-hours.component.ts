@@ -10,14 +10,11 @@ import {DataService} from '../../shared/data.service';
   styleUrl: './overall-hours.component.scss'
 })
 export class OverallHoursComponent implements OnInit {
-  _dataService: DataService;
   public chartOptionsDonut: AgChartOptions;
   public chartOptionsBar: AgChartOptions;
-  // public chartOptionsDonut: AgChartOptions;
   public isBrowser: boolean;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object, private dataServise: DataService, private cdRef: ChangeDetectorRef ) {
-    this._dataService =  dataServise;
     this.isBrowser = isPlatformBrowser(this.platformId);
     this.chartOptionsDonut = {};
     this.chartOptionsBar = {};
@@ -38,6 +35,7 @@ export class OverallHoursComponent implements OnInit {
 
 
       this.chartOptionsDonut ={
+        minWidth:0,
         data: donutData,
           title: {
         text: "Overall Hours",
@@ -100,11 +98,12 @@ export class OverallHoursComponent implements OnInit {
         ],
         legend: {
           position: 'bottom'
-        }
+        },
+        minWidth:0
       };
       this.cdRef.detectChanges();
     });
-//    return [hoursWorked,trackedHours];
+
   }
 
 

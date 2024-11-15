@@ -1,0 +1,254 @@
+[
+  {
+    "date": "2021-01",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 18,
+    "timesheetsAccepted": 17,
+    "missingTimesheets": 2
+  },
+  {
+    "date": "2021-02",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-03",
+    "timesheetsExpected": 22,
+    "timesheetsCreated": 21,
+    "timesheetsAccepted": 20,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-04",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 18,
+    "timesheetsAccepted": 16,
+    "missingTimesheets": 2
+  },
+  {
+    "date": "2021-05",
+    "timesheetsExpected": 21,
+    "timesheetsCreated": 20,
+    "timesheetsAccepted": 19,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-06",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-07",
+    "timesheetsExpected": 23,
+    "timesheetsCreated": 22,
+    "timesheetsAccepted": 21,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-08",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-09",
+    "timesheetsExpected": 22,
+    "timesheetsCreated": 21,
+    "timesheetsAccepted": 20,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-10",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-11",
+    "timesheetsExpected": 21,
+    "timesheetsCreated": 20,
+    "timesheetsAccepted": 19,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2021-12",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-01",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 18,
+    "timesheetsAccepted": 17,
+    "missingTimesheets": 2
+  },
+  {
+    "date": "2022-02",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-03",
+    "timesheetsExpected": 22,
+    "timesheetsCreated": 21,
+    "timesheetsAccepted": 20,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-04",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 18,
+    "timesheetsAccepted": 16,
+    "missingTimesheets": 2
+  },
+  {
+    "date": "2022-05",
+    "timesheetsExpected": 21,
+    "timesheetsCreated": 20,
+    "timesheetsAccepted": 19,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-06",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-07",
+    "timesheetsExpected": 23,
+    "timesheetsCreated": 22,
+    "timesheetsAccepted": 21,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-08",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-09",
+    "timesheetsExpected": 22,
+    "timesheetsCreated": 21,
+    "timesheetsAccepted": 20,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-10",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-11",
+    "timesheetsExpected": 21,
+    "timesheetsCreated": 20,
+    "timesheetsAccepted": 19,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2022-12",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-01",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 18,
+    "timesheetsAccepted": 17,
+    "missingTimesheets": 2
+  },
+  {
+    "date": "2023-02",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-03",
+    "timesheetsExpected": 22,
+    "timesheetsCreated": 21,
+    "timesheetsAccepted": 20,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-04",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 18,
+    "timesheetsAccepted": 16,
+    "missingTimesheets": 2
+  },
+  {
+    "date": "2023-05",
+    "timesheetsExpected": 21,
+    "timesheetsCreated": 20,
+    "timesheetsAccepted": 19,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-06",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-07",
+    "timesheetsExpected": 23,
+    "timesheetsCreated": 22,
+    "timesheetsAccepted": 21,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-08",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-09",
+    "timesheetsExpected": 22,
+    "timesheetsCreated": 21,
+    "timesheetsAccepted": 20,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-10",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-11",
+    "timesheetsExpected": 21,
+    "timesheetsCreated": 20,
+    "timesheetsAccepted": 19,
+    "missingTimesheets": 1
+  },
+  {
+    "date": "2023-12",
+    "timesheetsExpected": 20,
+    "timesheetsCreated": 19,
+    "timesheetsAccepted": 18,
+    "missingTimesheets": 1
+  }
+]

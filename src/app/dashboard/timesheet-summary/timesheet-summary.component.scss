@@ -1,0 +1,92 @@
+.chart-container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1 1 0;
+  div {
+    gap: 0px;
+    border-radius: 10px;
+    background-color: #FBFBFB;
+  }
+}
+.card{
+  min-width: 252px !important;
+  height: 94px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px solid #E3E3E3;
+  opacity: 0px;
+  background: #FBFBFB;
+  div{
+    padding: 5px;
+  }
+}
+.card_title{
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #767676;
+}
+
+
+
+// gpt
+.timesheet-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.timesheet-card {
+  flex: 1 1 calc(25% - 16px);
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E3E3E3;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.percentage {
+  font-size: 16px;
+  color: gray;
+}
+
+// gpt end
+@media (max-width: 575px) {
+  .chart-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1 1 0;
+    div {
+      gap: 0px;
+      border-radius: 10px;
+      background-color: #FBFBFB;
+    }
+    .card{
+      width: 100% !important;
+      min-width: 100% !important;
+    }
+  }
+
+}

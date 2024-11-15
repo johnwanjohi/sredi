@@ -1,0 +1,233 @@
+[
+  {
+    "name": "John Doe",
+    "TrackingScore": 85,
+    "ExpectedHours": 160,
+    "WorkedHours": 155,
+    "TrackedHours": 150,
+    "New": 5,
+    "Fiber": 10,
+    "FDTest": 5,
+    "SrandedHour": 5
+  },
+  {
+    "name": "Jane Smith",
+    "TrackingScore": 90,
+    "ExpectedHours": 160,
+    "WorkedHours": 160,
+    "TrackedHours": 158,
+    "New": 3,
+    "Fiber": 7,
+    "FDTest": 2,
+    "SrandedHour": 0
+  },
+  {
+    "name": "Michael Johnson",
+    "TrackingScore": 78,
+    "ExpectedHours": 160,
+    "WorkedHours": 148,
+    "TrackedHours": 140,
+    "New": 8,
+    "Fiber": 6,
+    "FDTest": 4,
+    "SrandedHour": 12
+  },
+  {
+    "name": "Emily Davis",
+    "TrackingScore": 95,
+    "ExpectedHours": 160,
+    "WorkedHours": 160,
+    "TrackedHours": 160,
+    "New": 0,
+    "Fiber": 5,
+    "FDTest": 0,
+    "SrandedHour": 0
+  },
+  {
+    "name": "David Brown",
+    "TrackingScore": 82,
+    "ExpectedHours": 160,
+    "WorkedHours": 150,
+    "TrackedHours": 145,
+    "New": 5,
+    "Fiber": 8,
+    "FDTest": 2,
+    "SrandedHour": 10
+  },
+  {
+    "name": "Jessica Wilson",
+    "TrackingScore": 88,
+    "ExpectedHours": 160,
+    "WorkedHours": 158,
+    "TrackedHours": 155,
+    "New": 3,
+    "Fiber": 10,
+    "FDTest": 3,
+    "SrandedHour": 2
+  },
+  {
+    "name": "Daniel Moore",
+    "TrackingScore": 84,
+    "ExpectedHours": 160,
+    "WorkedHours": 157,
+    "TrackedHours": 150,
+    "New": 7,
+    "Fiber": 8,
+    "FDTest": 2,
+    "SrandedHour": 3
+  },
+  {
+    "name": "Sarah Taylor",
+    "TrackingScore": 80,
+    "ExpectedHours": 160,
+    "WorkedHours": 145,
+    "TrackedHours": 140,
+    "New": 5,
+    "Fiber": 7,
+    "FDTest": 3,
+    "SrandedHour": 15
+  },
+  {
+    "name": "James Anderson",
+    "TrackingScore": 89,
+    "ExpectedHours": 160,
+    "WorkedHours": 160,
+    "TrackedHours": 160,
+    "New": 0,
+    "Fiber": 5,
+    "FDTest": 0,
+    "SrandedHour": 0
+  },
+  {
+    "name": "Olivia Thomas",
+    "TrackingScore": 92,
+    "ExpectedHours": 160,
+    "WorkedHours": 160,
+    "TrackedHours": 158,
+    "New": 2,
+    "Fiber": 6,
+    "FDTest": 1,
+    "SrandedHour": 4
+  },
+  {
+    "name": "William Martinez",
+    "TrackingScore": 76,
+    "ExpectedHours": 160,
+    "WorkedHours": 140,
+    "TrackedHours": 135,
+    "New": 5,
+    "Fiber": 5,
+    "FDTest": 4,
+    "SrandedHour": 20
+  },
+  {
+    "name": "Sophia Hernandez",
+    "TrackingScore": 85,
+    "ExpectedHours": 160,
+    "WorkedHours": 155,
+    "TrackedHours": 152,
+    "New": 3,
+    "Fiber": 7,
+    "FDTest": 2,
+    "SrandedHour": 8
+  },
+  {
+    "name": "Benjamin Robinson",
+    "TrackingScore": 90,
+    "ExpectedHours": 160,
+    "WorkedHours": 160,
+    "TrackedHours": 160,
+    "New": 0,
+    "Fiber": 5,
+    "FDTest": 0,
+    "SrandedHour": 0
+  },
+  {
+    "name": "Charlotte Lee",
+    "TrackingScore": 82,
+    "ExpectedHours": 160,
+    "WorkedHours": 145,
+    "TrackedHours": 140,
+    "New": 5,
+    "Fiber": 6,
+    "FDTest": 3,
+    "SrandedHour": 15
+  },
+  {
+    "name": "Ethan Walker",
+    "TrackingScore": 88,
+    "ExpectedHours": 160,
+    "WorkedHours": 160,
+    "TrackedHours": 157,
+    "New": 3,
+    "Fiber": 9,
+    "FDTest": 1,
+    "SrandedHour": 3
+  },
+  {
+    "name": "Amelia Hall",
+    "TrackingScore": 84,
+    "ExpectedHours": 160,
+    "WorkedHours": 152,
+    "TrackedHours": 150,
+    "New": 2,
+    "Fiber": 8,
+    "FDTest": 3,
+    "SrandedHour": 8
+  },
+  {
+    "name": "Mason Allen",
+    "TrackingScore": 80,
+    "ExpectedHours": 160,
+    "WorkedHours": 140,
+    "TrackedHours": 130,
+    "New": 10,
+    "Fiber": 5,
+    "FDTest": 5,
+    "SrandedHour": 20
+  },
+  {
+    "name": "Liam Young",
+    "TrackingScore": 87,
+    "ExpectedHours": 160,
+    "WorkedHours": 155,
+    "TrackedHours": 150,
+    "New": 5,
+    "Fiber": 7,
+    "FDTest": 3,
+    "SrandedHour": 8
+  },
+  {
+    "name": "Isabella King",
+    "TrackingScore": 93,
+    "ExpectedHours": 160,
+    "WorkedHours": 160,
+    "TrackedHours": 160,
+    "New": 0,
+    "Fiber": 5,
+    "FDTest": 0,
+    "SrandedHour": 0
+  },
+  {
+    "name": "Alexander Wright",
+    "TrackingScore": 79,
+    "ExpectedHours": 160,
+    "WorkedHours": 145,
+    "TrackedHours": 140,
+    "New": 5,
+    "Fiber": 6,
+    "FDTest": 3,
+    "SrandedHour": 15
+  },
+  {
+    "name": "Mia Scott",
+    "TrackingScore": 85,
+    "ExpectedHours": 160,
+    "WorkedHours": 150,
+    "TrackedHours": 145,
+    "New": 5,
+    "Fiber": 8,
+    "FDTest": 2,
+    "SrandedHour": 10
+  }
+]

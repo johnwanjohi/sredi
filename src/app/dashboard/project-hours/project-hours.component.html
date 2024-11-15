@@ -1,0 +1,17 @@
+<mat-card  appearance="outlined">
+  <mat-card-header>
+    <mat-card-title class="mat-card-title-dashboard"  >Project Hours</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="chart-container-charts">
+      <div class="bar-chart" style="display: flex; min-width: 98% !important;">
+        <ag-charts *ngIf="isBrowser"
+                   style="display: grid; width: 100%; height: 100%;"
+                   [options]="chartOptionsBar"
+        >
+        </ag-charts>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+

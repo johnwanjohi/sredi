@@ -1,7 +1,16 @@
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
 // Plus imports for other components in your app.
+
+@use "ag-grid-community/styles" as ag;
+@include ag.grid-styles((
+  themes: (balham,alpine, alpine-dark),
+  alpine-active-color: #00ffd0
+));
+
+
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
