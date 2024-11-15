@@ -1,4 +1,10 @@
-import { Component, inject,  OnInit } from '@angular/core';
+import {
+  Component,
+  inject,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -8,9 +14,9 @@ import { map, shareReplay } from 'rxjs/operators';
   templateUrl: './main-nav.component.html',
   styleUrls: ['./main-nav.component.scss', './input-controls-outline.scss'],
 })
-export class MainNavComponent implements OnInit {
+export class MainNavComponent implements OnInit, OnChanges {
   startDate: string = '01-01-2023';
-  endDate: string = '12-12-23';
+  endDate: string = '12-12-2023';
   isDarkMode: boolean = false;
   private breakpointObserver = inject(BreakpointObserver);
 
@@ -22,6 +28,12 @@ export class MainNavComponent implements OnInit {
     );
   ngOnInit() {
     this.startDate = '01-01-2023';
-    this.endDate = '12-12-23';
+    this.endDate = '12-12-2023';
+  }
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes) {
+      // console.log(changes);
+      // this.initializeData();
+    }
   }
 }
