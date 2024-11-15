@@ -15,7 +15,7 @@ import {
   MatDatepickerInputEvent,
   MatDateRangeInput,
 } from '@angular/material/datepicker';
-import {DataService} from '../../shared/data.service';
+import { DataService } from '../../shared/data.service';
 
 @Component({
   selector: 'app-main-nav',
@@ -35,19 +35,18 @@ export class MainNavComponent implements OnInit {
       map((result) => result.matches),
       shareReplay()
     );
-  constructor(private dataService: DataService) {
-  }
+  constructor(private dataService: DataService) {}
   ngOnInit() {
     this.startDate = '01-01-2023';
     this.endDate = '12-12-2023';
   }
   onStartDateChange(event: MatDatepickerInputEvent<Date>): void {
-    console.log('Start date changed:', event.value);
+    // console.log('Start date changed:', event.value);
     this.dataService.setStartDate(event.value);
   }
 
   onEndDateChange(event: MatDatepickerInputEvent<Date>): void {
-    console.log('End date changed:', event.value);
+    // console.log('End date changed:', event.value);
     this.dataService.setEndDate(event.value);
   }
 }
